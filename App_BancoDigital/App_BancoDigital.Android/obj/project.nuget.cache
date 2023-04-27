@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xpB+HkElPKrdTrtg4sOA7VOGsTsVGS0jz1DvxMRpBB8EXlZ6c3sQ7ZD5Eyl7abRhdT1bZ69RyIU1j82YjWFPNA==",
+  "dgSpecHash": "pU9aYVXVPVRHTyKX0JvbZe4uoVCe6O51SN2ngNhqo86/WTvGcHRhq610jjoHF9kHu6yXlfQFokDuz/Gv9TeEhQ==",
   "success": true,
-  "projectFilePath": "E:\\3º DS\\Desenvolvimento de Sistemas\\Pro Mob II\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\app_bancodigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
