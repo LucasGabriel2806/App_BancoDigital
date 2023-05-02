@@ -15,25 +15,23 @@ namespace App_BancoDigital
             InitializeComponent();
         }
 
-        private void btn_Entrar_Clicked(object sender, EventArgs e)
+        private async void btnSair_Clicked(object sender, EventArgs e)
         {
             try
             {
-                string email = txt_email.Text;
-                string senha = txt_senha.Text;
-
-                if (PropriedadesApp.list_usuarios.Any(i => (i.Email == email && i.Senha == senha)))
+                //Display alert retorna bool. sim(true) nao(false) cliquei em sim ele r=executa o if
+                if (await DisplayAlert("Tem Certeza?", "Vai sair mesmo?", "Sim", "Não"))
                 {
-                    App.Current.Properties.Add("usuario_logado", email);
-                    App.Current.MainPage = new Protegida();
+                    App.Current.Properties.Remove("PersistenciaUsuarioLogado");
+
+                    App.Current.MainPage = new Login();
                 }
-                else
-                    throw new Exception("Dados incorretos, tente novamente.");
+
 
             }
             catch (Exception ex)
             {
-                DisplayAlert("Ops!", ex.Message, "OK");
+                await DisplayAlert("Desculpe \n ", ex.Message, "OK");
             }
         }
     }

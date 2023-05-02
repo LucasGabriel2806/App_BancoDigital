@@ -10,7 +10,18 @@ namespace App_BancoDigital
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            
+            if (Properties.ContainsKey("PersistenciaUsuarioLogado"))
+            {
+                string usuario = Properties.ContainsKey("PersistenciaUsuarioLogado").ToString();
+
+                MainPage = new MainPage();
+
+            }
+            else
+            {
+                MainPage = new Login();
+            }
         }
 
         protected override void OnStart()

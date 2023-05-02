@@ -3,6 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.MainPage">
 
-    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#29bbac" Offset="0.1" />
+            <GradientStop Color="#fff" Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 BackgroundColor="White"
+                 Margin="10"
+                 Padding="10">
+
+        
+        
+        <Label Text="Você chegou na área restrita!"
+               TextColor="Black"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <Label Text="Essa área só pode ser acessada por quem efetuou o login corretamente"
+               TextColor="Black"
+               FontSize="Body" />
+
+
+        <Button Text="Sair" TextColor="Black" x:Name="btnSair" BackgroundColor="#808080" 
+                CornerRadius="30" Clicked="btnSair_Clicked" />
+
+    </StackLayout>
 
 </ContentPage>
