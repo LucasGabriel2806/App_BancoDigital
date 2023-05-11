@@ -22,7 +22,9 @@
                     <Grid ColumnDefinitions="Auto, *, Auto">
                         <Label Grid.Column="0" Text="Id" />
                         <Label Grid.Column="1" Text="Nome" />
-                        <Label Grid.Column="2" Text="Data Nasc" />
+                        <Label Grid.Column="2" Text="Cpf" />
+                        <Label Grid.Column="3" Text="Data Nasc" />
+                        <Label Grid.Column="4" Text="Senha" />
                     </Grid>
                 </ListView.Header>
                 <ListView.ItemTemplate>
@@ -35,7 +37,9 @@
                             <Grid ColumnDefinitions="Auto, *, Auto">
                                 <Label Grid.Column="0" Text="{Binding Id}" />
                                 <Label Grid.Column="1" Text="{Binding Nome}" />
-                                <Label Grid.Column="2" Text="{Binding Data_Nasc}" />
+                                <Label Grid.Column="2" Text="{Binding Cpf}" />
+                                <Label Grid.Column="3" Text="{Binding Data_Nasc}" />
+                                <Label Grid.Column="4" Text="{Binding Senha}" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
