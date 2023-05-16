@@ -1,16 +1,17 @@
-﻿using System;
+﻿using App_BancoDigital.Model;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace App_BancoDigital.Service
 {
     public class DataServiceCorrentista : DataService
     {
         /**
-         * Obtém a lista de pessoas
+         * Obtém a lista de correntistas
          */
-        public static async Task<List<Correntista>> GetPessoasAsync()
+        public static async Task<List<Correntista>> GetCorrentistasAsync()
         {
             string json = await DataService.GetDataFromService("/correntista");
 
@@ -42,7 +43,7 @@ namespace App_BancoDigital.Service
 
             string json = await DataService.PostDataToService(json_a_enviar, "/correntista/buscar");
 
-            List<Correntista> arr_pessoas = JsonConvert.DeserializeObject<List<Correntista>>(json);
+            List<Correntista> arr_correntistas = JsonConvert.DeserializeObject<List<Correntista>>(json);
 
             return arr_correntistas;
         }

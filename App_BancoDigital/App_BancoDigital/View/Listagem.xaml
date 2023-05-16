@@ -4,6 +4,7 @@
              x:Class="App_BancoDigital.View.Listagem"
              Title="Listagem de Correntistas">
 
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Inserir" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
@@ -12,14 +13,14 @@
         <StackLayout>
             <StackLayout Orientation="Horizontal">
                 <SearchBar x:Name="txt_q" />
-                <Button Text="Buscar" Clicked="Button_Clicked" />
+                <Button Text="Buscar" x:Name="btnBuscar" Clicked="btnBuscar_Clicked" />
             </StackLayout>
 
             <ActivityIndicator x:Name="act_carregando" />
 
-            <ListView x:Name="lst_pessoas">
+            <ListView x:Name="lst_correntistas">
                 <ListView.Header>
-                    <Grid ColumnDefinitions="Auto, *, Auto">
+                    <Grid ColumnDefinitions="*, *, *, *, *, *">
                         <Label Grid.Column="0" Text="Id" />
                         <Label Grid.Column="1" Text="Nome" />
                         <Label Grid.Column="2" Text="Cpf" />
@@ -34,7 +35,7 @@
                             <ViewCell.ContextActions>
                                 <MenuItem Text="Remover" Clicked="MenuItem_Clicked" />
                             </ViewCell.ContextActions>
-                            <Grid ColumnDefinitions="Auto, *, Auto">
+                            <Grid ColumnDefinitions="*, *, *, *, *">
                                 <Label Grid.Column="0" Text="{Binding Id}" />
                                 <Label Grid.Column="1" Text="{Binding Nome}" />
                                 <Label Grid.Column="2" Text="{Binding Cpf}" />
@@ -47,6 +48,7 @@
             </ListView>
         </StackLayout>
     </ContentPage.Content>
+    
 
 
 

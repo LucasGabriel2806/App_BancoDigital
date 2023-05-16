@@ -1,6 +1,8 @@
 ﻿using App_BancoDigital.Model;
+using App_BancoDigital.Service;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,13 +15,15 @@ namespace App_BancoDigital.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Listagem : ContentPage
 	{
-		public Listagem ()
+        ObservableCollection<Correntista> ListaCorrentistas = new ObservableCollection<Correntista>();
+        public Listagem ()
 		{
 			InitializeComponent ();
 
             lst_correntistas.ItemsSource = ListaCorrentistas;
         }
 
+        
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.FormAdd());
@@ -78,7 +82,11 @@ namespace App_BancoDigital.View
                 act_carregando.IsRunning = false;
             }
         }
-        private void Button_Clicked(object sender, EventArgs e)
+
+
+        
+
+        private async void btnBuscar_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
@@ -106,7 +114,7 @@ namespace App_BancoDigital.View
             }
         }
 
-        private void MenuItem_Clicked(object sender, EventArgs e)
+        private async void MenuItem_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
@@ -115,12 +123,11 @@ namespace App_BancoDigital.View
             {
 
                 MenuItem menu = sender as MenuItem;
-                Correntista Correntista_selecionada = menu.BindingContext as Correntista;
+                Correntista correntista_selecionada = menu.BindingContext as Correntista;
 
                 await DataServiceCorrentista.DeleteAsync(correntista_selecionada.Id);
 
                 ListaCorrentistas.Remove(correntista_selecionada);
-
             }
             catch (Exception ex)
             {
@@ -133,5 +140,6 @@ namespace App_BancoDigital.View
                 act_carregando.IsVisible = false;
             }
         }
+
     }
 }

@@ -32,7 +32,7 @@ namespace App_BancoDigital
                     App.Current.Properties.Add("PersistenciaUsuarioLogado", txt_usuario.Text);
 
                     //Trocando para a página principal
-                    App.Current.MainPage = new MainPage();
+                    App.Current.MainPage = new View.Listagem();
                 }
                 else
                 {

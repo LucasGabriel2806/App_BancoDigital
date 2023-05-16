@@ -15,7 +15,7 @@ namespace App_BancoDigital
             {
                 string usuario = Properties.ContainsKey("PersistenciaUsuarioLogado").ToString();
 
-                MainPage = new MainPage();
+                MainPage = new NavigationPage(new View.Listagem());
 
             }
             else

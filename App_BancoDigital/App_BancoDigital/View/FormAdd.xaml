@@ -22,10 +22,12 @@
                     <Label Text="Data Nascimento: " />
                     <DatePicker x:Name="dtpck_data_nasc" />
                     <Label Text="Senha: " />
-                    <Entry x:Name="txt_senha" />
+                    <Entry x:Name="txt_senha" IsPassword="True" />
                 </StackLayout>
             </Frame>
         </StackLayout>
     </ContentPage.Content>
+
+
 
 </ContentPage>

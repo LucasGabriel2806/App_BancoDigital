@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using App_BancoDigital.Model;
+using App_BancoDigital.Service;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,7 +15,7 @@ namespace App_BancoDigital.View
 			InitializeComponent ();
 		}
 
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
@@ -28,10 +26,11 @@ namespace App_BancoDigital.View
                 {
                     Nome = txt_nome.Text,
                     Cpf = txt_cpf.Text,
-                    Data_Nasc = dtpck_data_nasc.Date
+                    Data_Nasc = dtpck_data_nasc.Date,
+                    Senha = txt_senha.Text
                 });
 
-                string msg = $"Pessoa inserida com sucesso. Código gerado: {p.Id} ";
+                string msg = $"Correntista inserido com sucesso. Código gerado: {p.Id} ";
 
                 await DisplayAlert("Sucesso!", msg, "OK");
 
