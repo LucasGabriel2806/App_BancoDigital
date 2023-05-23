@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace App_BancoDigital.Model
+namespace AppBancoDigital.Model
 {
-    class Conta
+    public class Conta
     {
         public int Id { get; set; }
-        public int Numero { get; set; }
-
-        public string tipo { get; set; }
-        public string senha { get; set; }
-
-
+        public Correntista correntista { get; set; }        
+        public double Saldo { get; set; }
+        public double Limite { get; set; }
+        public string Tipo { get; set; }
+        public DateTime Data_Abertura { get; set; }
     }
 }

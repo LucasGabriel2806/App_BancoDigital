@@ -6,22 +6,15 @@ namespace App_BancoDigital
 {
     public partial class App : Application
     {
+        /**
+        * Armazena os dados do Correntista após o login.
+        */
+        public static Model.Correntista DadosCorrentista { get; set; }
         public App()
         {
             InitializeComponent();
 
-            
-            if (Properties.ContainsKey("PersistenciaUsuarioLogado"))
-            {
-                string usuario = Properties.ContainsKey("PersistenciaUsuarioLogado").ToString();
-
-                MainPage = new NavigationPage(new View.Listagem());
-
-            }
-            else
-            {
-                MainPage = new Login();
-            }
+            MainPage = new NavigationPage(new View.Acesso.Login());
         }
 
         protected override void OnStart()

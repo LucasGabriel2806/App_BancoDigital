@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace App_BancoDigital.Model
+namespace AppBancoDigital.Model
 {
-    class Transacao
+    public class Transacao
     {
         public int Id { get; set; }
-        public string Valor { get; set; }
-
-        public DateTime Data { get; set; }
-
+        public Conta ContaOrigem { get; set; }
+        public Conta ContaDestino { get; set; }
+        public double Valor { get; set; }
+        public DateTime Data_Transacao { get; set; }    
     }
 }

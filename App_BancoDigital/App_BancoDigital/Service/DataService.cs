@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
-namespace App_BancoDigital.Service
+namespace AppBancoDigital.Service
 {
     public class DataService
     {
@@ -27,6 +27,10 @@ namespace App_BancoDigital.Service
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(uri);
+
+                Console.WriteLine("_______________________________");
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                Console.WriteLine("_______________________________");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -60,6 +64,10 @@ namespace App_BancoDigital.Service
                     uri,
                     new StringContent(json_object, Encoding.UTF8, "application/json")
                 );
+
+                Console.WriteLine("_______________________________");
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                Console.WriteLine("_______________________________");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -106,7 +114,5 @@ namespace App_BancoDigital.Service
             return msg_erro;
 
         }
-
-
     }
 }

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_BancoDigital.View.TelaInicial">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="txt_correntista" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Seu saldo é de " />
+                            <Span Text="Et₵ 1.000,00 " TextColor="Red" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Fazer Pix" x:Name="btnFazer_Pix" Clicked="btnFazer_Pix_Clicked" />
+            <Button Text="Receber Pix" x:Name="btnReceber_Pix" Clicked="btnReceber_Pix_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_BancoDigital.View.Pix.EnviarPix">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Gerar QR CODE" Clicked="Button_Clicked" />
+
+            <Label Text="QR Code vai aparecer abaixo: " />
+
+            <Image x:Name="img_qrcode" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

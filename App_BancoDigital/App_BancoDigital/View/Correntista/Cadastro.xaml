@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_BancoDigital.View.Correntista.Cadastro"
+             Title="Abra sua Conta">
+
+
+    <StackLayout Padding="10"
+                     VerticalOptions="Center">
+        <Frame CornerRadius="10">
+            <StackLayout>
+                <Label Text="Nome: " />
+                <Entry x:Name="txt_nome" />
+
+                <Label Text="E-mail: " />
+                <Entry x:Name="txt_email" Keyboard="Email" />
+
+                <Label Text="CPF: " />
+                <Entry x:Name="txt_cpf" Keyboard="Numeric" />
+
+                <Label Text="Data Nascimento: " />
+                <DatePicker x:Name="dtpck_data_nascimento" />
+
+                <Frame Margin="10" BackgroundColor="#eee">
+                    <StackLayout>
+                        <Label Text="Senha: " />
+                        <Entry x:Name="txt_senha" IsPassword="True" />
+
+                        <Label Text="Confirme a Senha: " />
+                        <Entry x:Name="txt_senha_confirmacao" IsPassword="True" />
+                    </StackLayout>
+                </Frame>
+
+                <Button Text="Cadastrar" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked" />
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Fazer Login" x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>

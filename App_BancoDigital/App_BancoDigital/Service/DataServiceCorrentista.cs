@@ -1,66 +1,33 @@
-﻿using App_BancoDigital.Model;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using AppBancoDigital.Model;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
-
-namespace App_BancoDigital.Service
+namespace AppBancoDigital.Service
 {
     public class DataServiceCorrentista : DataService
     {
         /**
-         * Obtém a lista de correntistas
+         * Realiza o login do cliente.
          */
-        public static async Task<List<Correntista>> GetCorrentistasAsync()
+        public static async Task<Correntista> LoginAsync(Correntista c)
         {
-            string json = await DataService.GetDataFromService("/correntista");
+            var json_a_enviar = JsonConvert.SerializeObject(c);
 
-            List<Correntista> arr_correntistas = JsonConvert.DeserializeObject<List<Correntista>>(json);
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/entrar");
 
-            return arr_correntistas;
+            return JsonConvert.DeserializeObject<Correntista>(json);
         }
 
         /**
-         * Envia um Model em forma de JSON ara insert no banco.
+         * Envia a Model de um Cliente para ser cadastrado no banco.
          */
-        public static async Task<Correntista> Cadastrar(Correntista c)
+        public static async Task<Correntista> SaveAsync(Correntista c)
         {
             var json_a_enviar = JsonConvert.SerializeObject(c);
 
             string json = await DataService.PostDataToService(json_a_enviar, "/correntista/salvar");
 
-            Correntista p = JsonConvert.DeserializeObject<Correntista>(json);
-
-            return p;
+            return JsonConvert.DeserializeObject<Correntista>(json);
         }
-
-        /**
-         * Realiza uma busca de pessoas no banco de dados.
-         */
-        public static async Task<List<Correntista>> SearchAsync(string q)
-        {
-            var json_a_enviar = JsonConvert.SerializeObject(q);
-
-            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/buscar");
-
-            List<Correntista> arr_correntistas = JsonConvert.DeserializeObject<List<Correntista>>(json);
-
-            return arr_correntistas;
-        }
-
-        /**
-         * Deleta uma pessoa do banco de dados.
-         */
-        public static async Task<List<Correntista>> DeleteAsync(int id)
-        {
-            var json_a_enviar = JsonConvert.SerializeObject(id);
-
-            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/delete");
-
-            List<Correntista> arr_correntistas = JsonConvert.DeserializeObject<List<Correntista>>(json);
-
-            return arr_correntistas;
-        }
-
     }
 }
