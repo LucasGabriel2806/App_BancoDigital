@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppBancoDigital.Model
+namespace App_BancoDigital.Model
 {
     public class Conta
     {
         public int Id { get; set; }
-        public Correntista correntista { get; set; }        
+        public Correntista correntista { get; set; }
         public double Saldo { get; set; }
         public double Limite { get; set; }
         public string Tipo { get; set; }

@@ -16,7 +16,7 @@
                 <Entry x:Name="txt_email" Keyboard="Email" />
 
                 <Label Text="CPF: " />
-                <Entry x:Name="txt_cpf" Keyboard="Numeric" />
+                <Entry x:Name="txt_cpf" MaxLength="11" Keyboard="Numeric" />
 
                 <Label Text="Data Nascimento: " />
                 <DatePicker x:Name="dtpck_data_nascimento" />

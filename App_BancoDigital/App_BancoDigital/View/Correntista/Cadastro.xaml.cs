@@ -1,4 +1,4 @@
-﻿using AppBancoDigital.Service;
+﻿using App_BancoDigital.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace App_BancoDigital.View.Correntista
 			InitializeComponent ();
 		}
 
-        private void btnLogin_Clicked(object sender, EventArgs e)
+        private async void btnLogin_Clicked(object sender, EventArgs e)
         {
             try
             {

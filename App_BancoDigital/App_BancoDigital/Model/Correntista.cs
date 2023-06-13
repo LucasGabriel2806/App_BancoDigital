@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppBancoDigital.Model
+namespace App_BancoDigital.Model
 {
     public class Correntista
     {

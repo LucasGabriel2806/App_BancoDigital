@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
-namespace AppBancoDigital.Service
+namespace App_BancoDigital.Service
 {
     public class DataService
     {
@@ -17,10 +17,40 @@ namespace AppBancoDigital.Service
 
             string uri = servidor + rota;
 
+            /**
+             * utiliza a classe Connectivity do namespace Xamarin.Essentials 
+             * para obter o estado atual da conectividade de rede.
+             * 
+             * Connectivity.NetworkAccess é uma propriedade estática da classe 
+             * Connectivity que fornece informações sobre o estado da conectividade 
+             * de rede. Ela retorna um valor do tipo NetworkAccess, que é uma 
+             * enumeração que pode ter os seguintes valores:
+               NetworkAccess.Unknown: Indica que o estado da conectividade 
+               é desconhecido.
+               NetworkAccess.None: Indica que não há nenhuma conectividade 
+               de rede disponível.
+               NetworkAccess.Local: Indica que há apenas conectividade de 
+               rede local disponível.
+               NetworkAccess.ConstrainedInternet: Indica que há conectividade 
+               de rede, mas é limitada ou restrita.
+               NetworkAccess.Internet: Indica que há conectividade de rede 
+               à Internet disponível.
+             */
             var current = Connectivity.NetworkAccess;
+
 
             if (current != NetworkAccess.Internet)
             {
+                /**
+                 * Nesse caso, o código lança uma exceção do tipo Exception 
+                 * com a mensagem de erro "Por favor, conecte-se à Internet.".
+                   Essa exceção pode ser capturada e tratada em outro local 
+                   do código, permitindo que você tome medidas apropriadas 
+                   quando não há conexão com a Internet, como exibir uma 
+                   mensagem de erro ao usuário ou interromper a execução 
+                   de determinada funcionalidade que requer conectividade 
+                   com a Internet.
+                 */
                 throw new Exception("Por favor, conecte-se à Internet.");
             }
 

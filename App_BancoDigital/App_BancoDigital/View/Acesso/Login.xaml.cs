@@ -1,4 +1,4 @@
-﻿using AppBancoDigital.Service;
+﻿using App_BancoDigital.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,49 +8,51 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App_BancoDigital
+namespace App_BancoDigital.View.Acesso 
+{ 
+
+[XamlCompilation(XamlCompilationOptions.Compile)]
+public partial class Login : ContentPage
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+
+
+    public Login()
+    {
+        InitializeComponent();
+    }
+
+    private async void btnEntrar_Clicked(object sender, EventArgs e)
     {
 
-        
-        public Login()
+        try
         {
-            InitializeComponent();
-        }
-
-        private async void btnEntrar_Clicked(object sender, EventArgs e)
-        {
-
-            try
+            Model.Correntista c = await DataServiceCorrentista.LoginAsync
+                    (new Model.Correntista
             {
-                Model.Correntista c = await DataServiceCorrentista.LoginAsync(new Model.Correntista
-                {
-                    Cpf = txt_cpf.Text,
-                    Senha = txt_senha.Text,
-                });
+                Cpf = txt_cpf.Text,
+                Senha = txt_senha.Text,
+            });
 
-                if (c.Id != null)
-                {
-                    App.DadosCorrentista = c;
-                    App.Current.MainPage = new NavigationPage(new View.TelaInicial());
-                    //App.Current.MainPage = new View.TelaInicial();
-                }
-                else
-                    throw new Exception("Dados de login inválidos.");
-
-            }
-            catch (Exception ex)
+            if (c.Id != null)
             {
-                await DisplayAlert("Ops!", ex.Message, "OK");
+                App.DadosCorrentista = c;
+                App.Current.MainPage = new NavigationPage(new View.TelaInicial());
+                //App.Current.MainPage = new View.TelaInicial();
             }
+            else
+                throw new Exception("Dados de login inválidos.");
 
         }
-
-        private void btnCadastro_Clicked(object sender, EventArgs e)
+        catch (Exception ex)
         {
-            Navigation.PushAsync(new View.Correntista.Cadastro());
+            await DisplayAlert("Ops!", ex.Message, "OK");
         }
+
     }
+
+    private void btnCadastro_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new View.Correntista.Cadastro());
+    }
+}
 }

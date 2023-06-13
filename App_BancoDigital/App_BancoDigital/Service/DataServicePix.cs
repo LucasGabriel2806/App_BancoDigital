@@ -1,8 +1,8 @@
-﻿using AppBancoDigital.Model;
+﻿using App_BancoDigital.Model;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 
-namespace AppBancoDigital.Service
+namespace App_BancoDigital.Service
 {
     public class DataServicePix : DataService
     {
