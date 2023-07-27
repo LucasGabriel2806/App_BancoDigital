@@ -5,38 +5,53 @@
              Title="Abra sua Conta">
 
 
-    <StackLayout Padding="10"
+    <ContentPage.Content>
+
+        <StackLayout Padding="10"
                      VerticalOptions="Center">
-        <Frame CornerRadius="10">
-            <StackLayout>
-                <Label Text="Nome: " />
-                <Entry x:Name="txt_nome" />
 
-                <Label Text="E-mail: " />
-                <Entry x:Name="txt_email" Keyboard="Email" />
+            <Frame CornerRadius="10">
 
-                <Label Text="CPF: " />
-                <Entry x:Name="txt_cpf" MaxLength="11" Keyboard="Numeric" />
+                <StackLayout>
 
-                <Label Text="Data Nascimento: " />
-                <DatePicker x:Name="dtpck_data_nascimento" />
+                    <Label Text="Nome: " />
+                    <Entry x:Name="txt_nome" />
 
-                <Frame Margin="10" BackgroundColor="#eee">
-                    <StackLayout>
-                        <Label Text="Senha: " />
-                        <Entry x:Name="txt_senha" IsPassword="True" />
+                    <Label Text="E-mail: " />
+                    <Entry x:Name="txt_email" Keyboard="Email" />
 
-                        <Label Text="Confirme a Senha: " />
-                        <Entry x:Name="txt_senha_confirmacao" IsPassword="True" />
-                    </StackLayout>
-                </Frame>
+                    <Label Text="CPF: " />
+                    <Entry x:Name="txt_cpf" Keyboard="Numeric" />
 
-                <Button Text="Cadastrar" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked" />
-            </StackLayout>
-        </Frame>
+                    <Label Text="Data Nascimento: " />
+                    <DatePicker x:Name="dtpck_data_nascimento" />
 
-        <Button Text="Fazer Login" x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+                    <Frame Margin="10" BackgroundColor="#eee">
 
-    </StackLayout>
+                        <StackLayout>
+
+                            <Label Text="Senha: " />
+                            <Entry x:Name="txt_senha" IsPassword="True" />
+
+                            <Label Text="Confirme a Senha: " />
+                            <Entry x:Name="txt_senha_confirmacao" IsPassword="True" />
+
+                        </StackLayout>
+
+                    </Frame>
+
+                    <!---->
+                    <Button Text="Cadastrar" Clicked="Button_Clicked_Cadastrar" />
+
+                </StackLayout>
+
+            </Frame>
+
+            <!--Volta pra tela de Login-->
+            <Button Text="Fazer Login" Clicked="Button_Clicked_Login" />
+
+        </StackLayout>
+
+    </ContentPage.Content>
 
 </ContentPage>

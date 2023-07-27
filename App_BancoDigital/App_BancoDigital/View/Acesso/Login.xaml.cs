@@ -11,48 +11,60 @@ using Xamarin.Forms.Xaml;
 namespace App_BancoDigital.View.Acesso 
 { 
 
-[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class Login : ContentPage
-{
-
-
-    public Login()
-    {
-        InitializeComponent();
-    }
-
-    private async void btnEntrar_Clicked(object sender, EventArgs e)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Login : ContentPage
     {
 
-        try
+
+        public Login()
         {
-            Model.Correntista c = await DataServiceCorrentista.LoginAsync
-                    (new Model.Correntista
-            {
-                Cpf = txt_cpf.Text,
-                Senha = txt_senha.Text,
-            });
+            InitializeComponent();
+        }
 
-            if (c.Id != null)
+        private async void btn_Entrar_Clicked(object sender, EventArgs e)
+        {
+            try
             {
-                App.DadosCorrentista = c;
-                App.Current.MainPage = new NavigationPage(new View.TelaInicial());
-                //App.Current.MainPage = new View.TelaInicial();
+                Model.Correntista c = await DataServiceCorrentista.LoginAsync(new Model.Correntista
+                {
+                    /**
+                     * Aqui os dados da digitados estão sendo atribuidos para
+                     * as propriedades da classe Correntista.
+                     */
+                    Cpf = txt_cpf.Text,
+                    Senha = txt_senha.Text,
+                });
+
+                /**
+                 * Se o Id não for nulo, então fez o registro no banco de dados, 
+                 * Se for nulo, não fez.
+                 */
+                if (c.Id != null)
+                {
+                    /**
+                     * A propriedade DadosCorrentista da app.xaml.cs está recebendo esses
+                     * dados. E depois indo pra TelaInicial
+                     */
+                    App.DadosCorrentista = c;
+                    App.Current.MainPage = new NavigationPage(new View.TelaInicial());
+                    //App.Current.MainPage = new View.TelaInicial();
+                }
+                else
+                    throw new Exception("Dados de login inválidos.");
+
             }
-            else
-                throw new Exception("Dados de login inválidos.");
-
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
-        catch (Exception ex)
+
+        private void btn_Cadastro_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Ops!", ex.Message, "OK");
+            /**
+             * Botão que redireciona pra página de cadastro
+             */
+            Navigation.PushAsync(new View.Correntista.Cadastro());
         }
-
     }
-
-    private void btnCadastro_Clicked(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new View.Correntista.Cadastro());
-    }
-}
 }

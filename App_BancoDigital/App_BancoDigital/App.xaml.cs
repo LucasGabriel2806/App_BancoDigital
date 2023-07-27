@@ -8,7 +8,7 @@ namespace App_BancoDigital
     public partial class App : Application
     {
         /**
-        * Armazena os dados do Correntista após o login.
+        * Propriedade que Armazena os dados do Correntista após o login.
         */
         public static Model.Correntista DadosCorrentista { get; set; }
         public App()

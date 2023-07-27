@@ -19,17 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Imagens\logopix.png" />
-    <None Remove="Imagens\logo_pix.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Imagens\logo_pix.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="QRCoder" Version="1.4.3" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
