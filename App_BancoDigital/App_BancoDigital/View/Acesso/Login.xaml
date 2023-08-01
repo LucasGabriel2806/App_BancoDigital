@@ -10,6 +10,10 @@
             <GradientStop Color="#FFF" Offset="1.1" />
         </LinearGradientBrush>
     </ContentPage.Background> 
+    
+    Paleta de Cores:
+    Azul: 025AA5
+    Amarelo: F4F42E
     -->
 
     <ContentPage.Content>
@@ -23,7 +27,7 @@
                 <StackLayout>
 
                     <Label Text="Seu CPF:" />
-                    <Entry x:Name="txt_cpf" />
+                    <Entry x:Name="txt_cpf" MaxLength="11" />
 
                     <Label Text="Sua senha:" />
                     <Entry x:Name="txt_senha" />

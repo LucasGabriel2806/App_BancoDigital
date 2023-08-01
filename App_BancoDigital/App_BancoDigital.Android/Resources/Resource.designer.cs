@@ -18795,6 +18795,9 @@ namespace App_BancoDigital.Droid
 		public partial class Mipmap
 		{
 			
+			// aapt resource value: 0x7F0C0004
+			public const int icon_round = 2131492868;
+			
 			// aapt resource value: 0x7F0C0000
 			public const int ic_launcher = 2131492864;
 			

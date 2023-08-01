@@ -154,39 +154,23 @@ namespace App_BancoDigital.Service
 
             switch (status_code)
             {
-                /**
-                 * código de status HTTP 400 (Requisição Inválida).
-                 * erro aqui
-                 */
+                
                 case System.Net.HttpStatusCode.BadRequest:
                     msg_erro = "A requisição não pode ser atendida agora. Tente mais tarde.";
                     break;
 
-                /**
-                 * o código de status HTTP 404 (Recurso não encontrado).
-                 */
                 case System.Net.HttpStatusCode.NotFound:
                     msg_erro = "Recurso indisponível no momento. Tente mais tarde.";
                     break;
 
-                /**
-                 * o código de status HTTP 500 (Erro interno do servidor).
-                 */
                 case System.Net.HttpStatusCode.InternalServerError:
                     msg_erro = "Nosso banco de dados está indisponível. Tente mais tarde.";
                     break;
-
-                /**
-                 * representa o código de status HTTP 408 (Tempo 
-                 * limite da solicitação).
-                 */
+               
                 case System.Net.HttpStatusCode.RequestTimeout:
                     msg_erro = "O servidor está demorando muito para responder. Tente novamente.";
                     break;
 
-                /**
-                 * o código de status HTTP 403 (Acesso proibido).
-                 */
                 case System.Net.HttpStatusCode.Forbidden:
                     msg_erro = "Recurso temporariamente indisponível. Tente mais tarde.";
                     break;

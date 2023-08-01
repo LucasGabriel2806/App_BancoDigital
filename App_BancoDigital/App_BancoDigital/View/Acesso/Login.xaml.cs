@@ -55,6 +55,9 @@ namespace App_BancoDigital.View.Acesso
             }
             catch (Exception ex)
             {
+                /**
+                 * erro aqui
+                 */
                 await DisplayAlert("Ops!", ex.Message, "OK");
             }
         }

@@ -36,7 +36,7 @@ namespace App_BancoDigital.View.Correntista
                     Email = txt_email.Text,
                     Data_Nascimento = dtpck_data_nascimento.Date,
                     Cpf = txt_cpf.Text,
-                    Senha = txt_senha.Text,
+                    Senha = txt_senha.Text
                 });
 
                 /**
@@ -58,6 +58,9 @@ namespace App_BancoDigital.View.Correntista
             }
             catch (Exception ex)
             {
+                /**
+                 * erro aqui
+                 */
                 await DisplayAlert("Ops!", ex.Message, "OK");
             }
         }
