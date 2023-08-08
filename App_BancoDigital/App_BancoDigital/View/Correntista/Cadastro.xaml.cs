@@ -46,13 +46,15 @@ namespace App_BancoDigital.View.Correntista
                 if (c.Id != null)
                 {
                     /**
+                     * Deixando gravado os dados do correntista que acabou de se cadastrar.
+                     */ 
+                    App.DadosCorrentista = c;
+                    
+                    /**
                      * Vai pra telaInicial
                      */
                     await Navigation.PushAsync(new View.TelaInicial());
                 }
-                /**
-                 * erro aqui
-                 */
                 else
                     throw new Exception("Ocorreu um erro ao salvar seu cadastro.");
             }
@@ -62,6 +64,9 @@ namespace App_BancoDigital.View.Correntista
                  * erro aqui
                  */
                 await DisplayAlert("Ops!", ex.Message, "OK");
+                Console.WriteLine("______________________________________________________");
+                Console.WriteLine(ex.StackTrace);
+                Console.WriteLine("______________________________________________________");
             }
         }
 

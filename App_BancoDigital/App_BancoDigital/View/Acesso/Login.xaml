@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_BancoDigital.View.Acesso.Login">
+             x:Class="App_BancoDigital.View.Acesso.Login"
+             Background="#315AA1">
 
     <!--
     <ContentPage.Background>
@@ -18,7 +19,9 @@
 
     <ContentPage.Content>
 
-        <StackLayout VerticalOptions="Center" Margin="20">
+        <StackLayout Margin="20">
+
+            <Image Source="banco_brasil_fonte" HeightRequest="150" />
 
             <Frame BorderColor="#CCC" 
                    HasShadow="True"
@@ -33,9 +36,19 @@
                     <Entry x:Name="txt_senha" />
 
                     <Button Text="Entrar" x:Name="btn_Entrar" 
+                            BackgroundColor="Yellow"
+                            TextColor="Blue"
+                            CornerRadius="15"
+                            BorderWidth="2"
+                            BorderColor="Blue"
                             Clicked="btn_Entrar_Clicked" />
 
                     <Button Text="Abrir Minha Conta" x:Name="btn_Cadastro"
+                            BackgroundColor="Yellow"
+                            TextColor="Blue"
+                            CornerRadius="15"
+                            BorderWidth="2"
+                            BorderColor="Blue"
                             Clicked="btn_Cadastro_Clicked" />
 
                 </StackLayout>

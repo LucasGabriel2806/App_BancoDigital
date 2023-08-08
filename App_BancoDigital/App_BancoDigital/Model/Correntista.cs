@@ -16,5 +16,7 @@ namespace App_BancoDigital.Model
         public string Cpf { get; set;}
         public string Senha { get; set; }
 
+        public List<Conta> rows_contas { get; set; }
+
     }
 }
