@@ -49,7 +49,10 @@ namespace App_BancoDigital.View.Correntista
                      * Deixando gravado os dados do correntista que acabou de se cadastrar.
                      */ 
                     App.DadosCorrentista = c;
-                    
+                    /**
+                     * await espera a confirmação do DisplayAlert para prosseguir
+                     */
+                    await DisplayAlert("Sucesso!", "Correntista cadastrado com sucesso!", "OK");
                     /**
                      * Vai pra telaInicial
                      */

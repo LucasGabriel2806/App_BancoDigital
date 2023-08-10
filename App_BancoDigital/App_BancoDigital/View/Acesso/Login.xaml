@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Acesso.Login"
-             Background="#315AA1">
+             Background="#ededed">
 
     <!--
     <ContentPage.Background>
@@ -15,6 +15,7 @@
     Paleta de Cores:
     Azul: 025AA5
     Amarelo: F4F42E
+    Cinza tela de fundo: #ededed
     -->
 
     <ContentPage.Content>
@@ -29,26 +30,30 @@
 
                 <StackLayout>
 
-                    <Label Text="Seu CPF:" />
+                    <Label Text="Seu CPF:" FontSize="17" TextColor="#404ede"/>
                     <Entry x:Name="txt_cpf" MaxLength="11" />
 
-                    <Label Text="Sua senha:" />
+                    <Label Text="Sua senha:" FontSize="17" TextColor="#404ede" />
                     <Entry x:Name="txt_senha" />
 
                     <Button Text="Entrar" x:Name="btn_Entrar" 
-                            BackgroundColor="Yellow"
-                            TextColor="Blue"
+                            BackgroundColor="#F4F42E"
+                            FontSize="18" 
+                            TextColor="#404ede"
                             CornerRadius="15"
                             BorderWidth="2"
-                            BorderColor="Blue"
+                            FontAttributes="Bold"
+                            BorderColor="#404ede"
                             Clicked="btn_Entrar_Clicked" />
 
                     <Button Text="Abrir Minha Conta" x:Name="btn_Cadastro"
-                            BackgroundColor="Yellow"
-                            TextColor="Blue"
+                            BackgroundColor="#F4F42E"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            TextColor="#404ede"
                             CornerRadius="15"
                             BorderWidth="2"
-                            BorderColor="Blue"
+                            BorderColor="#404ede"
                             Clicked="btn_Cadastro_Clicked" />
 
                 </StackLayout>

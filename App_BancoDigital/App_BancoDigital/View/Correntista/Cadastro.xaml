@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Correntista.Cadastro"
-             Title="Abra sua Conta">
+             Title="Abra sua Conta"
+             BackgroundColor="#ededed">
 
 
     <ContentPage.Content>
@@ -14,41 +15,69 @@
 
                 <StackLayout>
 
-                    <Label Text="Nome: " />
+                    <Label Text="Nome: "
+                           FontSize="17" 
+                           TextColor="#404ede"/>
                     <Entry x:Name="txt_nome" />
 
-                    <Label Text="E-mail: " />
+                    <Label Text="E-mail: "
+                           FontSize="17" 
+                           TextColor="#404ede"/>
                     <Entry x:Name="txt_email" Keyboard="Email" />
 
-                    <Label Text="CPF: " />
+                    <Label Text="CPF: "
+                           FontSize="17" 
+                           TextColor="#404ede"/>
                     <Entry x:Name="txt_cpf" Keyboard="Numeric" MaxLength="11"/>
 
-                    <Label Text="Data Nascimento: " />
+                    <Label Text="Data Nascimento: " 
+                           FontSize="17" 
+                           TextColor="#404ede"/>
                     <DatePicker x:Name="dtpck_data_nascimento" />
 
                     <Frame Margin="10" BackgroundColor="#eee">
 
                         <StackLayout>
 
-                            <Label Text="Senha: " />
+                            <Label Text="Senha: " 
+                                   FontSize="17" 
+                                   TextColor="#404ede"/>
                             <Entry x:Name="txt_senha" IsPassword="True" />
 
-                            <Label Text="Confirme a Senha: " />
+                            <Label Text="Confirme a Senha: " 
+                                   FontSize="17" 
+                                   TextColor="#404ede"/>
                             <Entry x:Name="txt_senha_confirmacao" IsPassword="True" />
 
                         </StackLayout>
 
                     </Frame>
 
-                    <!---->
-                    <Button Text="Cadastrar" Clicked="Button_Clicked_Cadastrar" />
+                    <!--Cadastra o correntista-->
+                    <Button Text="Cadastrar" 
+                            Clicked="Button_Clicked_Cadastrar" 
+                            BackgroundColor="#F4F42E"
+                            FontSize="18" 
+                            TextColor="#404ede"
+                            CornerRadius="15"
+                            BorderWidth="2"
+                            FontAttributes="Bold"
+                            BorderColor="#404ede" />
 
                 </StackLayout>
 
             </Frame>
 
             <!--Volta pra tela de Login-->
-            <Button Text="Fazer Login" Clicked="Button_Clicked_Login" />
+            <Button Text="Fazer Login" 
+                    Clicked="Button_Clicked_Login" 
+                    BackgroundColor="#F4F42E"
+                    FontSize="18" 
+                    TextColor="#404ede"
+                    CornerRadius="15"
+                    BorderWidth="2"
+                    FontAttributes="Bold"
+                    BorderColor="#404ede"/>
 
         </StackLayout>
 
