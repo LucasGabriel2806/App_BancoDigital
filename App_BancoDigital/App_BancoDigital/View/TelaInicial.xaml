@@ -25,13 +25,31 @@
                 </Label.FormattedText>
                 
             </Label>
+
+            <StackLayout Orientation="Horizontal">
             
             <Button Text="Fazer Pix" x:Name="btnFazer_Pix" 
-                    Clicked="btnFazer_Pix_Clicked" />
+                    Clicked="btnFazer_Pix_Clicked" 
+                    BackgroundColor="#F4F42E"
+                    FontSize="18" 
+                    TextColor="#404ede"
+                    CornerRadius="15"
+                    BorderWidth="2"
+                    FontAttributes="Bold"
+                    BorderColor="#404ede" />
             
             <Button Text="Receber Pix" x:Name="btnReceber_Pix" 
-                    Clicked="btnReceber_Pix_Clicked" />
-            
+                    Clicked="btnReceber_Pix_Clicked"
+                    BackgroundColor="#F4F42E"
+                    FontSize="18" 
+                    TextColor="#404ede"
+                    CornerRadius="15"
+                    BorderWidth="2"
+                    FontAttributes="Bold"
+                    BorderColor="#404ede" />
+
+            </StackLayout>
+
         </StackLayout>
         
     </ContentPage.Content>
