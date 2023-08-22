@@ -16495,14 +16495,14 @@ namespace App_BancoDigital.Droid
 			// aapt resource value: 0x7F070056
 			public const int avd_show_password = 2131165270;
 			
-			// aapt resource value: 0x7F070057
-			public const int banco_brasil_fonte = 2131165271;
-			
 			// aapt resource value: 0x7F070058
-			public const int banco_brasil_logo_fonte = 2131165272;
+			public const int bblogo = 2131165272;
 			
 			// aapt resource value: 0x7F070059
-			public const int bblogo = 2131165273;
+			public const int bblogo_amarela = 2131165273;
+			
+			// aapt resource value: 0x7F070057
+			public const int bb_logo_completa_horizontal = 2131165271;
 			
 			// aapt resource value: 0x7F07005A
 			public const int btn_checkbox_checked_mtrl = 2131165274;
@@ -16664,16 +16664,22 @@ namespace App_BancoDigital.Droid
 			public const int notify_panel_notification_icon_bg = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int preference_list_divider_material = 2131165327;
+			public const int pix_logo = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int test_custom_background = 2131165328;
+			public const int pix_logo_completa_horizontal = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int tooltip_frame_dark = 2131165329;
+			public const int preference_list_divider_material = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int tooltip_frame_light = 2131165330;
+			public const int test_custom_background = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int tooltip_frame_dark = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int tooltip_frame_light = 2131165332;
 			
 			static Drawable()
 			{

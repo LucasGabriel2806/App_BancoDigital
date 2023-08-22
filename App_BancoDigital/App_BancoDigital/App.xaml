@@ -3,7 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="Primary">#005AA6</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}"></Setter>
+                <Setter Property="BarTextColor" Value="White"></Setter>
+                
+            </Style>
+        </ResourceDictionary>
         
         
     </Application.Resources>

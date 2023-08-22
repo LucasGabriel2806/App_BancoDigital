@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
         "projectName": "App_BancoDigital.Android",
-        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital.Android\\App_BancoDigital.Android.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.Android\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj"
+              "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj",
         "projectName": "App_BancoDigital",
-        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\App_BancoDigital\\App_BancoDigital\\App_BancoDigital\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\AppBancoDigital-master\\App_BancoDigital\\App_BancoDigital\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

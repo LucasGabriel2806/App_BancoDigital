@@ -9860,9 +9860,9 @@ public final class R {
     public static final int abc_vector_test=0x7f070054;
     public static final int avd_hide_password=0x7f070055;
     public static final int avd_show_password=0x7f070056;
-    public static final int banco_brasil_fonte=0x7f070057;
-    public static final int banco_brasil_logo_fonte=0x7f070058;
-    public static final int bblogo=0x7f070059;
+    public static final int bb_logo_completa_horizontal=0x7f070057;
+    public static final int bblogo=0x7f070058;
+    public static final int bblogo_amarela=0x7f070059;
     public static final int btn_checkbox_checked_mtrl=0x7f07005a;
     public static final int btn_checkbox_checked_to_unchecked_mtrl_animation=0x7f07005b;
     public static final int btn_checkbox_unchecked_mtrl=0x7f07005c;
@@ -9916,10 +9916,12 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f07008c;
     public static final int notification_tile_bg=0x7f07008d;
     public static final int notify_panel_notification_icon_bg=0x7f07008e;
-    public static final int preference_list_divider_material=0x7f07008f;
-    public static final int test_custom_background=0x7f070090;
-    public static final int tooltip_frame_dark=0x7f070091;
-    public static final int tooltip_frame_light=0x7f070092;
+    public static final int pix_logo=0x7f07008f;
+    public static final int pix_logo_completa_horizontal=0x7f070090;
+    public static final int preference_list_divider_material=0x7f070091;
+    public static final int test_custom_background=0x7f070092;
+    public static final int tooltip_frame_dark=0x7f070093;
+    public static final int tooltip_frame_light=0x7f070094;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

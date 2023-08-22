@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Correntista.Cadastro"
              Title="Abra sua Conta"
-             BackgroundColor="#ededed">
+             BackgroundColor="#F4F4F4">
 
 
     <ContentPage.Content>
@@ -17,36 +17,36 @@
 
                     <Label Text="Nome: "
                            FontSize="17" 
-                           TextColor="#404ede"/>
+                           TextColor="Black"/>
                     <Entry x:Name="txt_nome" />
 
                     <Label Text="E-mail: "
                            FontSize="17" 
-                           TextColor="#404ede"/>
+                           TextColor="Black"/>
                     <Entry x:Name="txt_email" Keyboard="Email" />
 
                     <Label Text="CPF: "
                            FontSize="17" 
-                           TextColor="#404ede"/>
+                           TextColor="Black"/>
                     <Entry x:Name="txt_cpf" Keyboard="Numeric" MaxLength="11"/>
 
                     <Label Text="Data Nascimento: " 
                            FontSize="17" 
-                           TextColor="#404ede"/>
+                           TextColor="Black"/>
                     <DatePicker x:Name="dtpck_data_nascimento" />
 
-                    <Frame Margin="10" BackgroundColor="#eee">
+                    <Frame Margin="10" BackgroundColor="#F4F4F4">
 
                         <StackLayout>
 
                             <Label Text="Senha: " 
                                    FontSize="17" 
-                                   TextColor="#404ede"/>
+                                   TextColor="Black"/>
                             <Entry x:Name="txt_senha" IsPassword="True" />
 
                             <Label Text="Confirme a Senha: " 
                                    FontSize="17" 
-                                   TextColor="#404ede"/>
+                                   TextColor="Black"/>
                             <Entry x:Name="txt_senha_confirmacao" IsPassword="True" />
 
                         </StackLayout>

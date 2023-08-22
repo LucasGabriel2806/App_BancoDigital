@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_BancoDigital.View.TelaInicial">
+             x:Class="App_BancoDigital.View.TelaInicial"
+             BackgroundColor="#F4F4F4"
+             Title="Tela Inicial">
     
     <ContentPage.Content>
         
@@ -42,10 +44,10 @@
                     Clicked="btnReceber_Pix_Clicked"
                     BackgroundColor="#F4F42E"
                     FontSize="18" 
-                    TextColor="#404ede"
-                    CornerRadius="15"
-                    BorderWidth="2"
-                    FontAttributes="Bold"
+                    TextColor="#404ede" 
+                    CornerRadius="15" 
+                    BorderWidth="2" 
+                    FontAttributes="Bold" 
                     BorderColor="#404ede" />
 
             </StackLayout>

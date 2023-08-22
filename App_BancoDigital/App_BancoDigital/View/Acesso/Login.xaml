@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Acesso.Login"
-             Background="#ededed">
+             Background="#F4F4F4"
+             IconImageSource="bblogo.png"
+             Title="Tela de Login">
 
     <!--
     <ContentPage.Background>
@@ -22,7 +24,7 @@
 
         <StackLayout Margin="20">
 
-            <Image Source="banco_brasil_fonte" HeightRequest="150" />
+            <Image Source="bb_logo_completa_horizontal" HeightRequest="170" />
 
             <Frame BorderColor="#CCC" 
                    HasShadow="True"
@@ -30,10 +32,10 @@
 
                 <StackLayout>
 
-                    <Label Text="Seu CPF:" FontSize="17" TextColor="#404ede"/>
+                    <Label Text="Seu CPF:" FontSize="17" TextColor="Black"/>
                     <Entry x:Name="txt_cpf" MaxLength="11" />
 
-                    <Label Text="Sua senha:" FontSize="17" TextColor="#404ede" />
+                    <Label Text="Sua senha:" FontSize="17" TextColor="Black" />
                     <Entry x:Name="txt_senha" />
 
                     <Button Text="Entrar" x:Name="btn_Entrar" 
