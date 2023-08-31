@@ -4,7 +4,7 @@
              x:Class="App_BancoDigital.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#005AA6</Color>
+            <Color x:Key="Primary">#005aa6</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}"></Setter>
                 <Setter Property="BarTextColor" Value="White"></Setter>

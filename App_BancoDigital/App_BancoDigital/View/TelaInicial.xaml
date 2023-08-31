@@ -50,7 +50,18 @@
                     FontAttributes="Bold" 
                     BorderColor="#404ede" />
 
+                <Button Text="Sair da Minha Conta" x:Name="btn_Sair"
+                            BackgroundColor="#c91414"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            CornerRadius="15"
+                            BorderWidth="2"
+                            BorderColor="Black"
+                            Clicked="btn_Sair_Clicked" />
+                
             </StackLayout>
+            
 
         </StackLayout>
         

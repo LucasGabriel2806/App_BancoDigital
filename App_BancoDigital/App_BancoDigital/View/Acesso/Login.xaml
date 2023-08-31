@@ -36,7 +36,7 @@
                     <Entry x:Name="txt_cpf" MaxLength="11" />
 
                     <Label Text="Sua senha:" FontSize="17" TextColor="Black" />
-                    <Entry x:Name="txt_senha" />
+                    <Entry x:Name="txt_senha" IsPassword="True" />
 
                     <Button Text="Entrar" x:Name="btn_Entrar" 
                             BackgroundColor="#F4F42E"
@@ -58,6 +58,8 @@
                             BorderColor="#404ede"
                             Clicked="btn_Cadastro_Clicked" />
 
+                    
+                    
                 </StackLayout>
 
             </Frame>

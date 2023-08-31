@@ -28,5 +28,11 @@ namespace App_BancoDigital.View
         {
             Navigation.PushAsync(new View.Pix.ReceberPix());
         }
+
+        private void btn_Sair_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Sair", "Deseja sair da sua conta?", "NÃO", "SIM");
+        }
+
     }
 }

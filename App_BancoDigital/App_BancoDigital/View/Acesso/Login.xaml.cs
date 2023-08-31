@@ -69,5 +69,7 @@ namespace App_BancoDigital.View.Acesso
              */
             Navigation.PushAsync(new View.Correntista.Cadastro());
         }
+
+        
     }
 }
