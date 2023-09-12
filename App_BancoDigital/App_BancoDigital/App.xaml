@@ -2,16 +2,42 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.App">
+    
     <Application.Resources>
+        
         <ResourceDictionary>
+            
             <Color x:Key="Primary">#005aa6</Color>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}"></Setter>
-                <Setter Property="BarTextColor" Value="White"></Setter>
-                
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="White" />
+
             </Style>
+
+            <Style x:Key="BotaoBase" TargetType="Button">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="BorderWidth" Value="2" />
+            </Style>
+
+            <Style x:Key="BotaoVermelho" TargetType="Button" BasedOn="{StaticResource BotaoBase}">
+                <Setter Property="BackgroundColor" Value="#c91414" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BorderColor" Value="Black" />
+            </Style>
+
+            <Style x:Key="BotaoAmarelo" TargetType="Button" BasedOn="{StaticResource BotaoBase}">
+                <Setter Property="BackgroundColor" Value="#F4F42E" />
+                <Setter Property="TextColor" Value="#404ede" />
+                <Setter Property="BorderColor" Value="#404ede" />
+            </Style>
+
+
+
+
         </ResourceDictionary>
         
-        
     </Application.Resources>
+    
 </Application>

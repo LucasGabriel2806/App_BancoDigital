@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.TelaInicial"
              BackgroundColor="#F4F4F4"
-             Title="Tela Inicial">
+             Title="Tela Inicial"
+             NavigationPage.HasBackButton="False">
     
     <ContentPage.Content>
         
@@ -32,32 +33,14 @@
             
             <Button Text="Fazer Pix" x:Name="btnFazer_Pix" 
                     Clicked="btnFazer_Pix_Clicked" 
-                    BackgroundColor="#F4F42E"
-                    FontSize="18" 
-                    TextColor="#404ede"
-                    CornerRadius="15"
-                    BorderWidth="2"
-                    FontAttributes="Bold"
-                    BorderColor="#404ede" />
+                    Style="{StaticResource BotaoAmarelo}" />
             
             <Button Text="Receber Pix" x:Name="btnReceber_Pix" 
                     Clicked="btnReceber_Pix_Clicked"
-                    BackgroundColor="#F4F42E"
-                    FontSize="18" 
-                    TextColor="#404ede" 
-                    CornerRadius="15" 
-                    BorderWidth="2" 
-                    FontAttributes="Bold" 
-                    BorderColor="#404ede" />
+                    Style="{ StaticResource BotaoAmarelo }" />
 
                 <Button Text="Sair da Minha Conta" x:Name="btn_Sair"
-                            BackgroundColor="#c91414"
-                            FontSize="18" 
-                            FontAttributes="Bold"
-                            TextColor="White"
-                            CornerRadius="15"
-                            BorderWidth="2"
-                            BorderColor="Black"
+                            Style="{ StaticResource BotaoVermelho }"
                             Clicked="btn_Sair_Clicked" />
                 
             </StackLayout>

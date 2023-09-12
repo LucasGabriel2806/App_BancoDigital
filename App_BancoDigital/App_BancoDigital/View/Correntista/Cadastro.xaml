@@ -56,13 +56,7 @@
                     <!--Cadastra o correntista-->
                     <Button Text="Cadastrar" 
                             Clicked="Button_Clicked_Cadastrar" 
-                            BackgroundColor="#F4F42E"
-                            FontSize="18" 
-                            TextColor="#404ede"
-                            CornerRadius="15"
-                            BorderWidth="2"
-                            FontAttributes="Bold"
-                            BorderColor="#404ede" />
+                            Style="{ StaticResource BotaoAmarelo }" />
 
                 </StackLayout>
 
@@ -71,13 +65,7 @@
             <!--Volta pra tela de Login-->
             <Button Text="Fazer Login" 
                     Clicked="Button_Clicked_Login" 
-                    BackgroundColor="#F4F42E"
-                    FontSize="18" 
-                    TextColor="#404ede"
-                    CornerRadius="15"
-                    BorderWidth="2"
-                    FontAttributes="Bold"
-                    BorderColor="#404ede"/>
+                    Style="{ StaticResource BotaoAmarelo }"/>
 
         </StackLayout>
 

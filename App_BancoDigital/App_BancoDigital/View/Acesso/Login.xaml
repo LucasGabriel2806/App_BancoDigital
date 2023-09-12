@@ -39,23 +39,11 @@
                     <Entry x:Name="txt_senha" IsPassword="True" />
 
                     <Button Text="Entrar" x:Name="btn_Entrar" 
-                            BackgroundColor="#F4F42E"
-                            FontSize="18" 
-                            TextColor="#404ede"
-                            CornerRadius="15"
-                            BorderWidth="2"
-                            FontAttributes="Bold"
-                            BorderColor="#404ede"
+                            Style="{StaticResource BotaoAmarelo}"
                             Clicked="btn_Entrar_Clicked" />
 
                     <Button Text="Abrir Minha Conta" x:Name="btn_Cadastro"
-                            BackgroundColor="#F4F42E"
-                            FontSize="18" 
-                            FontAttributes="Bold"
-                            TextColor="#404ede"
-                            CornerRadius="15"
-                            BorderWidth="2"
-                            BorderColor="#404ede"
+                            Style="{StaticResource BotaoAmarelo}"
                             Clicked="btn_Cadastro_Clicked" />
 
                     
