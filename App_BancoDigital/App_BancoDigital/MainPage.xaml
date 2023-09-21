@@ -1,59 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_BancoDigital.MainPage">
+             x:Class="App_BancoDigital.MainPage"
+            xmlns:local="clr-namespace:App_BancoDigital"
+            Title="Menu">
 
-    <MasterDetailPage.Master>
-        
-        <ContentPage Title="Menu">
+    <!-- SubMenu de detalhes.
+    Informações báscias pra todas as 
+    páginas que você pretende navegar -->
+    <FlyoutPage.Flyout>
+        <local:FlyoutMenuPage />
+    </FlyoutPage.Flyout>
 
-            <Grid BackgroundColor="#000">
-
-                <Grid.RowDefinitions>
-                    
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    
-                </Grid.RowDefinitions>
-
-                <Frame Grid.Row="0"
-                       CornerRadius="10"
-                       BackgroundColor="#fff"
-                       Margin="10, 0, 10, 0">
-
-                    <StackLayout Grid.Row="0"
-                                 HorizontalOptions="FillAndExpand">
-
-                        <Image Source="" Aspect="AspectFit" />
-                        
-                    </StackLayout>
-                    
-                </Frame>
-
-                <Frame CornerRadius="10"
-                       BackgroundColor="#F3F2F0"
-                       Grid.Row="1"
-                       Margin="10">
-
-                    <StackLayout Grid.Row="1" Spacing="10" Margin="10" Padding="10" BackgroundColor="#F3F2F0">
-
-                        <!--<Button Text="Sair da Conta" x:Name="BtnSairConta" Clicked="" Style="{  }" />-->
-
-                    </StackLayout>
-                    
-                </Frame>
-                
-            </Grid>
-            
-        </ContentPage>
-        
-    </MasterDetailPage.Master>
-
-    <MasterDetailPage.Detail>
-        
+    <!-- 
+    Exibe o que corresponde ao item
+    selecionado na página flyout, 
+    -->
+    <FlyoutPage.Detail>
         <NavigationPage>
+            <x:Arguments>
+                <local:HomePage />
+            </x:Arguments>
         </NavigationPage>
         
-    </MasterDetailPage.Detail>
+    </FlyoutPage.Detail>
+    
 
-</MasterDetailPage>
+</FlyoutPage>

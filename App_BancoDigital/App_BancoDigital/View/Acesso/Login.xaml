@@ -33,7 +33,7 @@
                 <StackLayout>
 
                     <Label Text="Seu CPF:" FontSize="17" TextColor="Black"/>
-                    <Entry x:Name="txt_cpf" MaxLength="11" />
+                    <Entry x:Name="txt_cpf" Keyboard="Numeric" MaxLength="11" />
 
                     <Label Text="Sua senha:" FontSize="17" TextColor="Black" />
                     <Entry x:Name="txt_senha" IsPassword="True" />

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_BancoDigital"
+             Title="FlyoutMenu"
+             x:Class="App_BancoDigital.FlyoutMenuPage">
+
+    <StackLayout>
+        
+        <ListView>
+
+            <ListView.ItemsSource>
+
+                <x:Array Type="{x:Type local:FlyoutItemPage}">
+
+                    <local:FlyoutItemPage Title="Início" IconSource="" TargetPage="{x:Type local:HomePage}"/>
+                    <local:FlyoutItemPage Title="a" IconSource="" TargetPage="{x:Type local:Course}"/>
+                    <local:FlyoutItemPage Title="b" IconSource="" TargetPage="{x:Type local:AboutPage}"/>
+                    <local:FlyoutItemPage Title="c" IconSource="" TargetPage="{x:Type local:LogoutPage}"/>
+
+                </x:Array>
+                
+            </ListView.ItemsSource>
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}"/>
+                            <Label Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+                
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+    </StackLayout>
+    
+    
+
+</ContentPage>
