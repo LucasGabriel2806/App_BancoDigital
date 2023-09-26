@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_BancoDigital.FlyoutMenuPage"
              xmlns:local="clr-namespace:App_BancoDigital"
-             Title="FlyoutMenu"
-             x:Class="App_BancoDigital.FlyoutMenuPage">
+             Title="FlyoutMenu">
 
     <StackLayout>
         
-        <ListView>
+        <ListView x:Name="listview" x:FieldModifier="public">
 
             <ListView.ItemsSource>
 
                 <x:Array Type="{x:Type local:FlyoutItemPage}">
 
-                    <local:FlyoutItemPage Title="Início" IconSource="" TargetPage="{x:Type local:HomePage}"/>
+                    <local:FlyoutItemPage Title="Início" IconSource="" TargetPage="{x:Type local:TelaInicial}"/>
+                    <!--
                     <local:FlyoutItemPage Title="a" IconSource="" TargetPage="{x:Type local:Course}"/>
                     <local:FlyoutItemPage Title="b" IconSource="" TargetPage="{x:Type local:AboutPage}"/>
                     <local:FlyoutItemPage Title="c" IconSource="" TargetPage="{x:Type local:LogoutPage}"/>
+                    -->
+                    
 
                 </x:Array>
                 
+
             </ListView.ItemsSource>
 
             <ListView.ItemTemplate>
@@ -32,7 +36,8 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}"/>
-                            <Label Text="{Binding Title}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" 
+                                   VerticalOptions="Center" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

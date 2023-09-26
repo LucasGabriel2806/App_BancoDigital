@@ -55,7 +55,7 @@
     <EmbeddedResource Update="View\Pix\ReceberPix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\TelaInicial.xaml">
+    <EmbeddedResource Update="TelaInicial.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

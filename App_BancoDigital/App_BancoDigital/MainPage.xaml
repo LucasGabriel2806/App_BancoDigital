@@ -2,14 +2,13 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.MainPage"
-            xmlns:local="clr-namespace:App_BancoDigital"
-            Title="Menu">
+            xmlns:local="clr-namespace:App_BancoDigital">
 
     <!-- SubMenu de detalhes.
     Informações báscias pra todas as 
     páginas que você pretende navegar -->
     <FlyoutPage.Flyout>
-        <local:FlyoutMenuPage />
+        <local:FlyoutMenuPage x:Name="flyout" />
     </FlyoutPage.Flyout>
 
     <!-- 
@@ -19,7 +18,8 @@
     <FlyoutPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <local:HomePage />
+                <!-- Tela que ira aparecer primeiro -->
+                <local:TelaInicial />
             </x:Arguments>
         </NavigationPage>
         

@@ -17,8 +17,12 @@ namespace App_BancoDigital {
     public partial class MainPage : global::Xamarin.Forms.FlyoutPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::App_BancoDigital.FlyoutMenuPage flyout;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            flyout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::App_BancoDigital.FlyoutMenuPage>(this, "flyout");
         }
     }
 }

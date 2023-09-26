@@ -56,7 +56,7 @@ namespace App_BancoDigital.View.Correntista
                     /**
                      * Vai pra telaInicial
                      */
-                    await Navigation.PushAsync(new View.TelaInicial());
+                    await Navigation.PushAsync(new TelaInicial());
                 }   
                 else
                     throw new Exception("Ocorreu um erro ao salvar seu cadastro.");

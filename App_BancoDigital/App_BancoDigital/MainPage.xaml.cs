@@ -16,45 +16,21 @@ namespace App_BancoDigital
         {
             InitializeComponent();
 
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(TelaInicial)));
+            flyout.listview.ItemSelected += OnSelectedItem;
         }
 
-
-        private async void btnFazer_Pix_Clicked(object sender, EventArgs e)
+        private void OnSelectedItem(object sender, SelectedItemChangedEventArgs e)
         {
-            try
+            var item = e.SelectedItem as FlyoutItemPage;
+            if (item != null)
             {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.Pix.EnviarPix)));
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetPage));
+                flyout.listview.SelectedItem = null;
                 IsPresented = false;
-
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops!", ex.Message, "OK");
             }
         }
 
-        private async void btnReceber_Pix_Clicked(object sender, EventArgs e)
-        {
 
-            try
-            {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.Pix.ReceberPix)));
-                IsPresented = false;
 
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops!", ex.Message, "OK");
-            }
-
-        }
-
-        private async void BtnSairConta_Clicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Sair", "Deseja sair da sua conta?", "NÃO", "SIM");
-        }
-
-        
     }
 }

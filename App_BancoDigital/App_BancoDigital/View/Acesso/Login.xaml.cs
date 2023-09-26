@@ -46,7 +46,7 @@ namespace App_BancoDigital.View.Acesso
                      * dados. E depois indo pra TelaInicial
                      */
                     App.DadosCorrentista = c;
-                    App.Current.MainPage = new NavigationPage(new View.TelaInicial());
+                    App.Current.MainPage = new NavigationPage(new MainPage());
                     //App.Current.MainPage = new View.TelaInicial();
                 }
                 else

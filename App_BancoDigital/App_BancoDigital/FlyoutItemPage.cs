@@ -12,6 +12,10 @@ namespace App_BancoDigital
          */
         public string Title { get; set; }
         public string IconSource { get; set; }
+
+        /**
+         * Onde armazenamos nossa Page
+         */
         public Type TargetPage { get; set; }
 
 
