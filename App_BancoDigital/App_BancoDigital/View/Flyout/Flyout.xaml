@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_BancoDigital.View.Flyout.Flyout">
+
+    <FlyoutPage.Flyout>
+
+        <!--
+        <ContentPage Title="Menu">
+
+            <ContentPage.Content>
+
+                <Button x:Name="btn_Voltar"
+                        Text="&lt; Voltar" 
+                        Clicked="btn_Voltar_Clicked" 
+                        Style="{StaticResource BotaoTransparente}" />
+
+                <Button x:Name="btn_Sair" 
+                        Text="Sair da Conta"
+                        Clicked="btn_Sair_Clicked"
+                        Style="{StaticResource BotaoVermelho}" />
+
+            </ContentPage.Content>
+            
+        </ContentPage>
+        
+        -->
+         
+    </FlyoutPage.Flyout>
+
+        
+    <FlyoutPage.Detail>
+        
+        
+        
+    </FlyoutPage.Detail>
+    
+</FlyoutPage>

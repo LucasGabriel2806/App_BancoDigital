@@ -17,7 +17,7 @@
             <Style x:Key="BotaoBase" TargetType="Button">
                 <Setter Property="FontSize" Value="18" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="CornerRadius" Value="30" />
                 <Setter Property="BorderWidth" Value="2" />
             </Style>
 
@@ -31,6 +31,11 @@
                 <Setter Property="BackgroundColor" Value="#F4F42E" />
                 <Setter Property="TextColor" Value="#404ede" />
                 <Setter Property="BorderColor" Value="#404ede" />
+            </Style>
+
+            <Style x:Key="BotaoTransparente" TargetType="Button" BasedOn="{StaticResource BotaoBase}">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="#000" />
             </Style>
 
 
