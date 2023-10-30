@@ -23,6 +23,8 @@ namespace App_BancoDigital.View.Acesso
 
         private async void btn_Entrar_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new AcessarSuaConta());
+            /**
             try
             {
                 Model.Correntista c = await DataServiceCorrentista.LoginAsync(new Model.Correntista
@@ -30,21 +32,21 @@ namespace App_BancoDigital.View.Acesso
                     /**
                      * Aqui os dados da digitados estão sendo atribuidos para
                      * as propriedades da classe Correntista.
-                     */
-                    Cpf = txt_cpf.Text,
-                    Senha = txt_senha.Text,
+                     
+                    //Cpf = txt_cpf.Text,
+                    //Senha = txt_senha.Text,
                 });
 
                 /**
                  * Se o Id não for nulo, então fez o registro no banco de dados, 
                  * Se for nulo, não fez.
-                 */
+                 
                 if (c.Id != null)
                 {
                     /**
                      * A propriedade DadosCorrentista da app.xaml.cs está recebendo esses
                      * dados. E depois indo pra TelaInicial
-                     */
+                     
                     App.DadosCorrentista = c;
                     App.Current.MainPage = new NavigationPage(new MainPage());
                     //App.Current.MainPage = new View.TelaInicial();
@@ -57,9 +59,10 @@ namespace App_BancoDigital.View.Acesso
             {
                 /**
                  * erro aqui
-                 */
+                 
                 await DisplayAlert("Ops!", ex.Message, "OK");
             }
+            */
         }
 
         private void btn_Cadastro_Clicked(object sender, EventArgs e)
@@ -70,6 +73,10 @@ namespace App_BancoDigital.View.Acesso
             Navigation.PushAsync(new View.Correntista.Cadastro());
         }
 
-        
+        private void verDetalhes_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -2,9 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Acesso.Login"
-             Background="#F4F4F4"
-             IconImageSource="bblogo.png"
-             Title="Tela de Login">
+             BackgroundImageSource="bg1"
+             NavigationPage.HasNavigationBar="False">
 
     <!--
     <ContentPage.Background>
@@ -19,40 +18,51 @@
     Amarelo: F4F42E
     Cinza tela de fundo: #ededed
     -->
-
+    
     <ContentPage.Content>
 
-        <StackLayout Margin="20">
+        <Grid>
 
-            <Image Source="bb_logo_completa_horizontal" HeightRequest="170" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="360" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
 
-            <Frame BorderColor="#CCC" 
-                   HasShadow="True"
-                   CornerRadius="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-                <StackLayout>
+            <Image Source="horizontal_sf" Grid.Row="0" Grid.Column="1" />
 
-                    <Label Text="Seu CPF:" FontSize="17" TextColor="Black"/>
-                    <Entry x:Name="txt_cpf" Keyboard="Numeric" MaxLength="11" />
+            <Button Text="Acessar sua conta" x:Name="btn_Entrar"
+                        Style="{StaticResource BotaoTransparenteBordas}"
+                        Grid.Row="6" Grid.Column="1"
+                        Clicked="btn_Entrar_Clicked" />
 
-                    <Label Text="Sua senha:" FontSize="17" TextColor="Black" />
-                    <Entry x:Name="txt_senha" IsPassword="True" />
+            <Button Text="Quero ser cliente" x:Name="btn_Cadastro"
+                    Style="{StaticResource BotaoAmarelo}"
+                    Grid.Row="7" Grid.Column="1"
+                    Clicked="btn_Cadastro_Clicked" />
 
-                    <Button Text="Entrar" x:Name="btn_Entrar" 
-                            Style="{StaticResource BotaoAmarelo}"
-                            Clicked="btn_Entrar_Clicked" />
+        </Grid>
 
-                    <Button Text="Abrir Minha Conta" x:Name="btn_Cadastro"
-                            Style="{StaticResource BotaoAmarelo}"
-                            Clicked="btn_Cadastro_Clicked" />
+        
 
-                    
-                    
-                </StackLayout>
 
-            </Frame>
 
-        </StackLayout>
+
 
     </ContentPage.Content>
 

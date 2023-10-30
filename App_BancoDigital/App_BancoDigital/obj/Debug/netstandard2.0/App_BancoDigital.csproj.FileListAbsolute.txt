@@ -23,3 +23,5 @@ C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\
 C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\Debug\netstandard2.0\refint\App_BancoDigital.dll
 C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\Debug\netstandard2.0\App_BancoDigital.pdb
 C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\Debug\netstandard2.0\ref\App_BancoDigital.dll
+C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\Debug\netstandard2.0\View\Detalhes\Detalhes.xaml.g.cs
+C:\Users\Usuario\Desktop\App_BancoDigital\App_BancoDigital\App_BancoDigital\obj\Debug\netstandard2.0\View\Acesso\AcessarSuaConta.xaml.g.cs

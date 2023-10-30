@@ -16,7 +16,7 @@
         
         <StackLayout>
 
-            <Image Source="bb_logo_completa_horizontal.png" />
+            <Image Source="horizontal_sf" />
 
             <Label Text="Lucas (nova conta)" TextColor="White" 
                    Margin="10" />

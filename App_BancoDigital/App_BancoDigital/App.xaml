@@ -6,8 +6,8 @@
     <Application.Resources>
         
         <ResourceDictionary>
-            
-            <Color x:Key="Primary">#005aa6</Color>
+
+            <Color x:Key="Primary">transparent</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
@@ -17,7 +17,7 @@
             <Style x:Key="BotaoBase" TargetType="Button">
                 <Setter Property="FontSize" Value="18" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="CornerRadius" Value="30" />
+                <Setter Property="CornerRadius" Value="5" />
                 <Setter Property="BorderWidth" Value="2" />
             </Style>
 
@@ -36,6 +36,12 @@
             <Style x:Key="BotaoTransparente" TargetType="Button" BasedOn="{StaticResource BotaoBase}">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="TextColor" Value="#000" />
+            </Style>
+
+            <Style x:Key="BotaoTransparenteBordas" TargetType="Button" BasedOn="{StaticResource BotaoBase}">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="BorderColor" Value="#000" />
             </Style>
 
 
