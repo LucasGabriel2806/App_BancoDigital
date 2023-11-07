@@ -16,5 +16,10 @@ namespace App_BancoDigital.View.Acesso
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void btn_Entrar_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

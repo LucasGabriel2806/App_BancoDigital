@@ -1,12 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_BancoDigital.View.Acesso.AcessarSuaConta">
+             x:Class="App_BancoDigital.View.Acesso.AcessarSuaConta"
+             Title="Tela de Login">
+
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Margin="20, 200, 20, 0">
+
+            <Frame BorderColor="#CCC" 
+                   HasShadow="True"
+                   CornerRadius="10">
+                
+                <StackLayout>
+
+                    <Label Text="Seu CPF:" FontSize="17" TextColor="Black"/>
+                    
+                    <Entry x:Name="txt_cpf" MaxLength="11" />
+
+                    <Label Text="Sua senha:" FontSize="17" TextColor="Black" />
+                    
+                    <Entry x:Name="txt_senha" IsPassword="True" />
+                    
+                    <Button Text="Entrar" x:Name="btn_Entrar" 
+                            Style="{StaticResource BotaoAmarelo}"
+                            Clicked="btn_Entrar_Clicked" />
+
+
+                </StackLayout>
+                
+            </Frame>
+            
         </StackLayout>
+        
     </ContentPage.Content>
+
 </ContentPage>

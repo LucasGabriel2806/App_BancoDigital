@@ -7,7 +7,7 @@
         
         <ResourceDictionary>
 
-            <Color x:Key="Primary">transparent</Color>
+            <Color x:Key="Primary">#005aa6</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
