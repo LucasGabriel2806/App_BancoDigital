@@ -6,13 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Gerar QR CODE" Clicked="Button_Clicked" 
-                    BackgroundColor="#F4F42E"
-                    FontSize="18" 
-                    TextColor="#404ede"
-                    CornerRadius="15"
-                    BorderWidth="2"
-                    FontAttributes="Bold"
-                    BorderColor="#404ede" />
+                    Style="{StaticResource BotaoAmarelo}" />
 
             <Label Text="QR Code vai aparecer abaixo: " TextColor="Black"/>
 

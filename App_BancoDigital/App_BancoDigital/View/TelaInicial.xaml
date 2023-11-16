@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.TelaInicial"
-             BackgroundColor="#F4F4F4"
-             NavigationPage.HasBackButton="False">
+             NavigationPage.HasBackButton="False"
+             Title="Tela Inicial">
 
-    <ContentPage.Background>
+    <!--<ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
             <GradientStop Color="#a6c9ff" Offset="0.3" />
             <GradientStop Color="#5c97f2" Offset="1.1" />
         </LinearGradientBrush>
-    </ContentPage.Background>
+    </ContentPage.Background>-->
 
     <ContentPage.Content>
         
@@ -18,60 +18,45 @@
 
             <Image Source="horizontal_sf" />
 
-            <Label Text="Lucas (nova conta)" TextColor="White" 
+            <Label Text="Lucas (nova conta)" TextColor="Black" 
                    Margin="10" />
             <Label Text="Agência XX Conta ****XX-X"
-                   TextColor="White" 
+                   TextColor="Black" 
                    Margin="10"/>
 
             <Label x:Name="txt_correntista" />
-            
-            <Label>
-                
-                <Label.FormattedText>
-                    
-                    <FormattedString>
-                        
-                        <FormattedString.Spans>
-                            <Span Text="Seu saldo é de " />
-                            <Span Text="Et₵ 1.000,00 " TextColor="Red" />
-                        </FormattedString.Spans>
-                        
-                    </FormattedString>
-                    
-                </Label.FormattedText>
-                
-            </Label>
 
             
-            
-            <!--
-            <Button Text="Fazer Pix" x:Name="btnFazer_Pix" 
+            <Label>
+
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <FormattedString.Spans>
+                                <Span Text="Seu saldo é de " TextColor="Black" />
+                                <Span Text="Et₵ 1.000,00 " TextColor="Red" />
+                            </FormattedString.Spans>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+            </Label>
+
+            <StackLayout Margin="50,0,50,0">
+                <Button Text="Fazer Pix" x:Name="btnFazer_Pix" 
                     Clicked="btnFazer_Pix_Clicked" 
                     Style="{StaticResource BotaoAmarelo}" />
-            
-            <Button Text="Receber Pix" x:Name="btnReceber_Pix" 
+
+                <Button Text="Receber Pix" x:Name="btnReceber_Pix" 
                     Clicked="btnReceber_Pix_Clicked"
                     Style="{ StaticResource BotaoAmarelo }" />
 
-            <Button Text="Sair da Minha Conta" x:Name="btn_Sair"
+                <Button Text="Sair da Minha Conta" x:Name="btn_Sair"
                     Style="{ StaticResource BotaoVermelho }"            
                     Clicked="btn_Sair_Clicked" />
-            -->   
-             
-            
-            <Button Text="Entrar" x:Name="btn_Entrar"
-                    Style="{ StaticResource BotaoAmarelo }"
-                    VerticalOptions="CenterAndExpand"
-                    Margin="15"
-                    Clicked="btn_Entrar_Clicked" />
-
-            <Button Text="Acessar outra conta" TextColor="White"
-                    Style="{ StaticResource BotaoTransparente }" />
-
-
-
-
+            </StackLayout>
 
         </StackLayout>
         

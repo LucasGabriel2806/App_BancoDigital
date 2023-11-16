@@ -17,7 +17,7 @@
             <Style x:Key="BotaoBase" TargetType="Button">
                 <Setter Property="FontSize" Value="18" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="CornerRadius" Value="15" />
                 <Setter Property="BorderWidth" Value="2" />
             </Style>
 
