@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_BancoDigital.View.Pix.EnviarPix"
-             BackgroundColor="#F4F4F4" >
+             BackgroundColor="#FFF" 
+             Title="GERADOR QR CODE" >
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Gerar QR CODE" Clicked="Button_Clicked" 

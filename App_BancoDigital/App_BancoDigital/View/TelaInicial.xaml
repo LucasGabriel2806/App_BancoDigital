@@ -26,8 +26,8 @@
 
             <Label x:Name="txt_correntista" />
 
-            
-            <Label>
+
+            <Label Margin="10">
 
                     <Label.FormattedText>
 
